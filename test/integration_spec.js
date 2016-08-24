@@ -86,6 +86,9 @@ describe('integration test suite', () => {
         state: 'Jalisco',
       },
       description: 'bluejay is a tool built using angular and d3 in the FE',
+      duties: [
+        'Gather requirements from BI and transform them into reality',
+      ],
     });
     async.series([
       (callback) => project.create(callback),
@@ -105,6 +108,7 @@ describe('integration test suite', () => {
       should(testingProjects[0].client).be.exactly(project.client);
       should(testingProjects[0].location).be.eql(project.location);
       should(testingProjects[0].description).be.exactly(project.description);
+      should(testingProjects[0].duties).be.eql(project.duties);
       should(is.date(testingProjects[0].createdOn)).be.exactly(true);
       should(testingProjects[0].company).be.an.Object();
       should(testingProjects[0].company.name).be.exactly(company.name);
@@ -125,6 +129,7 @@ describe('integration test suite', () => {
       should(testingProjects[0].client).be.exactly(project.client);
       should(testingProjects[0].location).be.eql(project.location);
       should(testingProjects[0].description).be.exactly(project.description);
+      should(testingProjects[0].duties).be.eql(project.duties);
       should(is.date(testingProjects[0].createdOn)).be.exactly(true);
       should(testingProjects[0].company).be.an.Object();
       should(testingProjects[0].company.name).be.exactly(company.name);

@@ -55,6 +55,9 @@ describe('lib/core/project test suite', () => {
         state: 'Jalisco',
       },
       description: 'bluejay is a tool built using angular and d3 in the FE',
+      duties: [
+        'Gather requirements from BI and transform them into reality',
+      ],
     });
     project.create(done);
   });
@@ -67,6 +70,7 @@ describe('lib/core/project test suite', () => {
       should(existingProject.client).be.exactly(project.client);
       should(existingProject.location).be.eql(project.location);
       should(existingProject.description).be.exactly(project.description);
+      should(existingProject.duties).be.eql(project.duties);
       should(is.date(existingProject.createdOn)).be.exactly(true);
       return done(null);
     });
@@ -90,6 +94,7 @@ describe('lib/core/project test suite', () => {
       should(testingProjects[0].client).be.exactly(project.client);
       should(testingProjects[0].location).be.eql(project.location);
       should(testingProjects[0].description).be.exactly(project.description);
+      should(testingProjects[0].duties).be.eql(project.duties);
       should(is.date(testingProjects[0].createdOn)).be.exactly(true);
       return done(null);
     });
@@ -105,6 +110,7 @@ describe('lib/core/project test suite', () => {
         state: 'Updated Jalisco',
       };
       project.description = 'Updated description';
+      project.duties = ['Updated duties'];
       async.series([
         (callback) => project.update(callback),
         (callback) => {
@@ -116,6 +122,7 @@ describe('lib/core/project test suite', () => {
             should(updatedProject.client).be.exactly(project.client);
             should(updatedProject.location).be.eql(project.location);
             should(updatedProject.description).be.exactly(project.description);
+            should(updatedProject.duties).be.eql(project.duties);
             should(is.date(updatedProject.createdOn)).be.exactly(true);
             should(is.date(updatedProject.updatedOn)).be.exactly(true);
             should(moment(updatedProject.updatedOn)
