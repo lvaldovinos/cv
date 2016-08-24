@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Unosquare",
+    "url": "http://www.unosquare.com/",
+    "location": {
+      "address": "Av. Américas 1536 1A Col. Country Club",
+      "zip": 44637,
+      "city": "Guadalajara",
+      "state": "Jalisco"
+    }
+  },
+  {
+    "name": "Softtek",
+    "url": "http://www.softtek.com/",
+    "location": {
+      "address": "El Sauzal, Ensenada, B.C.",
+      "zip": 22760,
+      "city": "Ensenada",
+      "state": "Baja California"
+    }
+  },
+  {
+    "name": "4th Source",
+    "url": "http://www.4thsource.com/",
+    "location": {
+      "address": "Zenzontle 136, Sta Bárbara",
+      "zip": 28017,
+      "city": "Colima",
+      "state": "Colima"
+    }
+  },
+  {
+    "name": "Kiotech",
+    "url": "http://www.kiotech.com.mx/",
+    "location": {
+      "address": "Plutarco Elías Calles 238-A, San Isidro",
+      "zip": 28050,
+      "city": "Colima",
+      "state": "Colima"
+    }
+  },
+  {
+    "name": "Minisis"
+  }
+]

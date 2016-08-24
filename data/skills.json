@@ -1,0 +1,105 @@
+[
+  {
+    "name": "nodejs",
+    "url": "https://nodejs.org/en/"
+  },
+  {
+    "name": "Clarity PPM"
+  },
+  {
+    "name": "PLSQL",
+    "url": "http://www.oracle.com/technetwork/database/features/plsql/index.html"
+  },
+  {
+    "name": "SQL Oracle 10g",
+    "url": "http://www.oracle.com/technetwork/database/database10g/overview/index-095623.html"
+  },
+  {
+    "name": "angular",
+    "url": "https://angularjs.org/"
+  },
+  {
+    "name": "Graphdb Ontotex",
+    "url": "http://ontotext.com/products/graphdb/"
+  },
+  {
+    "name": "mocha",
+    "url": "https://mochajs.org/"
+  },
+  {
+    "name": "jasmine",
+    "url": "http://jasmine.github.io/"
+  },
+  {
+    "name": "d3",
+    "url": "https://d3js.org/"
+  },
+  {
+    "name": "protractor",
+    "url": "http://www.protractortest.org/"
+  },
+  {
+    "name": "redis",
+    "url": "http://redis.io/"
+  },
+  {
+    "name": "jquery",
+    "url": "https://jquery.com/"
+  },
+  {
+    "name": "bootstrap",
+    "url": "http://getbootstrap.com/"
+  },
+  {
+    "name": "Oracle Form",
+    "url": "http://www.oracle.com/technetwork/developer-tools/forms/overview/index-098877.html"
+  },
+  {
+    "name": "Crystal Reports",
+    "url": "http://www.crystalreports.com/directcart-5/?mboxSession=1471988532280-123714"
+  },
+  {
+    "name": "Oracle Reports",
+    "url": "http://www.oracle.com/technetwork/middleware/reports/overview/index.html"
+  },
+  {
+    "name": "C",
+    "url": "http://www.tutorialspoint.com/cprogramming/"
+  },
+  {
+    "name": "Proteus",
+    "url": "https://www.labcenter.com/"
+  },
+  {
+    "name": "CCS Compiler",
+    "url": "http://www.ccsinfo.com/content.php?page=compilers"
+  },
+  {
+    "name": "Couchdb",
+    "url": "http://couchdb.apache.org/"
+  },
+  {
+    "name": "MongoDB",
+    "url": "https://www.mongodb.com/"
+  },
+  {
+    "name": "Javascript",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "name": "underscore",
+    "url": "http://underscorejs.org/"
+  },
+  {
+    "name": "react",
+    "url": "https://facebook.github.io/react/"
+  },
+  {
+    "name": "Google Maps Api",
+    "url": "https://developers.google.com/maps/web-services/"
+  },
+  {
+    "name": "Semantic Web",
+    "url": "https://www.w3.org/standards/semanticweb/"
+  }
+]

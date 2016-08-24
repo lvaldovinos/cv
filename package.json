@@ -25,13 +25,16 @@
   },
   "homepage": "https://github.com/lvaldovinos/cv#readme",
   "dependencies": {
+    "JSONStream": "^1.1.4",
     "async": "^2.0.1",
+    "commander": "^2.9.0",
     "concat-stream": "^1.5.1",
     "moment": "^2.14.1",
     "my-config": "^2.0.0",
     "node-uuid": "^1.4.7",
     "request": "^2.74.0",
-    "should": "^10.0.0"
+    "should": "^10.0.0",
+    "winston": "^2.2.0"
   },
   "devDependencies": {
     "eslint": "^3.2.0",
