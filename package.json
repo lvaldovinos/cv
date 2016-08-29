@@ -4,8 +4,12 @@
   "description": "curriculum vitae",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint lib test",
+    "clear": "rm -f app/admin.css app/admin.scss app/admin.js",
+    "lint": "eslint lib test server bin app/src",
     "coverage": "CONFIG=config.json ENV=local istanbul cover _mocha -- -R spec",
+    "build-js": "babel app/src --out-dir app/lib && browserify app/lib/app.js -o app/admin.js -t [ babelify --presets [ es2015 ] ]",
+    "build-css": "cat app/src/*/*/*.scss > app/admin.scss && node-sass app/admin.scss app/admin.css",
+    "build": "npm run clear && npm run build-js && npm run build-css",
     "test": "npm run lint && npm run coverage"
   },
   "repository": {
@@ -29,18 +33,36 @@
     "async": "^2.0.1",
     "commander": "^2.9.0",
     "concat-stream": "^1.5.1",
+    "express": "^4.14.0",
+    "jquery": "^3.1.0",
     "moment": "^2.14.1",
     "my-config": "^2.0.0",
     "node-uuid": "^1.4.7",
+    "react": "^15.3.1",
+    "react-addons-shallow-compare": "^15.3.1",
+    "react-dates": "^1.0.0",
+    "react-dom": "^15.3.1",
+    "replacestream": "^4.0.2",
     "request": "^2.74.0",
-    "should": "^10.0.0",
+    "restify": "^4.1.1",
+    "superagent": "^2.2.0",
     "winston": "^2.2.0"
   },
   "devDependencies": {
-    "eslint": "^3.2.0",
-    "eslint-config-airbnb-base": "^5.0.1",
-    "eslint-plugin-import": "^1.12.0",
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.2",
     "istanbul": "^0.4.4",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "node-sass": "^3.8.0",
+    "should": "^10.0.0",
+    "supertest": "^2.0.0"
   }
 }
