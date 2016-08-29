@@ -18,6 +18,9 @@
     }],
     "new-cap": ["error", {
       "capIsNewExceptions": ["CORS"]
+    }],
+    "import/no-unresolved": ["error", {
+      ignore: ['app\/lib']
     }]
   }
 }
